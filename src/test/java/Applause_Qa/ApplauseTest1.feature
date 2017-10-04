@@ -65,4 +65,15 @@ Feature: Testing with only mandatory fields
     | Employee Id | AF453   |
    Then click on search
    And click on Pair button
-    
+   
+    Scenario: Unpair beacon from an employee
+     When user clicks on the beacon menu
+ Then selects the beacon id
+ Then clicks the Unpair button
+  Then clicks the Yes button
+  
+  Scenario: Unassign beacon from an employee
+     When user clicks on the beacon menu
+ Then selects the beacon id
+ Then clicks the Unassign button
+  Then clicks the Yes button

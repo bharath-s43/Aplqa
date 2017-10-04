@@ -196,6 +196,7 @@ public class ApplauseTest1 {
 	
 	@Then("^selects the beacon id$")
 	public void selects_the_beacon_id() throws Throwable {
+		Thread.sleep(2000);
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='ui-grid-cell-contents']/div")));
 		driver.findElement(By.xpath("//div[@class='ui-grid-cell-contents']/div")).click();
@@ -223,10 +224,30 @@ public class ApplauseTest1 {
 
 	@And("^click on Pair button$")
 	public void click_on_Pair_button() throws Throwable {
-		Thread.sleep(2000);
 		WebDriverWait wait = new WebDriverWait(driver, 10);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(text(), 'Pair')]")));
-		driver.findElement(By.xpath("//*[contains(text(), 'Pair')]")).click();
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//label[contains(text(), 'Pair')]")));
+		driver.findElement(By.xpath("//label[contains(text(), 'Pair')]")).click();
+	}
+	
+	@Then("^clicks the Unpair button$")
+	public void clicks_the_Unpair_button() throws Throwable {
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[contains(text(),'Pair Individual')]/following-sibling::a[contains(text(),'Unpair')]")));
+		driver.findElement(By.xpath("//a[contains(text(),'Pair Individual')]/following-sibling::a[contains(text(),'Unpair')]")).click();
+	}
+
+	@Then("^clicks the Yes button$")
+	public void clicks_the_Yes_button() throws Throwable {
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Yes')]")));
+		driver.findElement(By.xpath("//button[contains(text(),'Yes')]")).click();
+	}
+
+	@Then("^clicks the Unassign button$")
+	public void clicks_the_Unassign_button() throws Throwable {
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[contains(text(),'Assign Individual')]/following-sibling::a[contains(text(),'Unassign')]")));
+		driver.findElement(By.xpath("//a[contains(text(),'Assign Individual')]/following-sibling::a[contains(text(),'Unassign')]")).click();
 	}
 
 	
