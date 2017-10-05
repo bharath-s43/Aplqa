@@ -16,17 +16,17 @@ Feature: Testing with only mandatory fields
 
   Scenario: Create brand with only mandatory fields
     Given user selects the customer from the customer dropdown
-     | Customer | Hertz Corporation |
+      | Customer | Hertz Corporation |
     When user clicks on the brand menu
     When user click on the Add new button
     Then user enters the brand name
-      | Brand  | Hertz |
+      | Brand | Hertz |
     Then selects the rating image
     And click on the save button
 
   Scenario: Create location with only mandatory fields
     Given user selects the brand from the brand dropdown
-    | Brand  | Hertz |
+      | Brand | Hertz |
     When user clicks on the location menu
     When user click on the Add new button
     Then user enters the location name
@@ -41,39 +41,37 @@ Feature: Testing with only mandatory fields
     When user clicks on the employee menu
     When user click on the Add new button
     Then user enters the employee first name and last name
-   
       | First Name | Alex    |
       | Last Name  | Lampert |
     Then user enters the employee id and role
-     
       | Employee Id | AF453   |
       | Role        | Manager |
     And click on the save button
-    
-   Scenario: Assign beacon to location
+
+  Scenario: Assign beacon to location
     When user clicks on the beacon menu
     Then clicks on Assign individual button
     Then enters the beacon id
-    | Beacon Id | 348fd8ddfn5f7fg7    |
+      | Beacon Id | 348fd8ddfn5f7fg7 |
     And click on the save button
-    
-    Scenario: Pair beacon to an employee
+
+  Scenario: Pair beacon to an employee
     When user clicks on the beacon menu
     Then selects the beacon id
     Then clicks on Pair individual button
     Then enters the employee id
-    | Employee Id | AF453   |
-   Then click on search
-   And click on Pair button
-   
-    Scenario: Unpair beacon from an employee
-     When user clicks on the beacon menu
- Then selects the beacon id
- Then clicks the Unpair button
-  Then clicks the Yes button
-  
+      | Employee Id | AF453 |
+    Then click on search
+    And click on Pair button
+
+  Scenario: Unpair beacon from an employee
+    When user clicks on the beacon menu
+    Then selects the beacon id
+    Then clicks the Unpair button
+    Then clicks the Yes button
+
   Scenario: Unassign beacon from an employee
-     When user clicks on the beacon menu
- Then selects the beacon id
- Then clicks the Unassign button
-  Then clicks the Yes button
+    When user clicks on the beacon menu
+    Then selects the beacon id
+    Then clicks the Unassign button
+    Then clicks the Yes button
