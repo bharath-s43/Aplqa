@@ -76,5 +76,4 @@ Feature: Testing by entering all the fields
       | Employee Id | AL1E1              |
       | Role        | Multi-Unit Manager |
     Then user enters all other employee fields
-     
     And click on the save button
