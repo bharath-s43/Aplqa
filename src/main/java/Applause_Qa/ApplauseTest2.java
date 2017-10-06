@@ -35,8 +35,38 @@ public class ApplauseTest2 {
 	public void user_enters_all_other_brand_fields(DataTable table) throws Throwable {
 		List<List<String>> data = table.raw();
 		jse.executeScript("scroll(0, -450);");
-		driver.findElement(By.id("fileLogo")).click();
-		Runtime.getRuntime().exec("Images/The Ritz Carlton.exe");
+		
+		String dirPath = System.getProperty("user.dir");
+		
+		// Specify the file location with extension
+		  StringSelection sel = new StringSelection(dirPath+"\\Images\\TheRitzCarlton.png");
+		  
+		  // Copy to clipboard
+			 Toolkit.getDefaultToolkit().getSystemClipboard().setContents(sel,null);
+			 System.out.println("selection" +sel);
+			 
+			 driver.findElement(By.id("fileLogo")).click();
+			 
+			 Robot robot = new Robot();
+			 Thread.sleep(1000);
+			      
+			  // Press Enter
+			 robot.keyPress(KeyEvent.VK_ENTER);
+			 
+			// Release Enter
+			 robot.keyRelease(KeyEvent.VK_ENTER);
+			 
+			  // Press CTRL+V
+			 robot.keyPress(KeyEvent.VK_CONTROL);
+			 robot.keyPress(KeyEvent.VK_V);
+			 
+			// Release CTRL+V
+			 robot.keyRelease(KeyEvent.VK_CONTROL);
+			 robot.keyRelease(KeyEvent.VK_V);
+			 Thread.sleep(1000);
+			 robot.keyPress(KeyEvent.VK_ENTER);
+			 robot.keyRelease(KeyEvent.VK_ENTER);
+			 
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("br")));
 		driver.findElement(By.id("br")).clear();
@@ -74,8 +104,37 @@ public class ApplauseTest2 {
 	public void user_enters_all_other_location_fields(DataTable table) throws Throwable {
 		List<List<String>> data = table.raw();
 		driver.findElement(By.name("majorMinor")).sendKeys(data.get(0).get(1));
-		driver.findElement(By.id("locImg")).click();
-		Runtime.getRuntime().exec("Images/Marina Del Rey.exe");
+		
+	String dirPath = System.getProperty("user.dir");
+		
+		// Specify the file location with extension
+		  StringSelection sel = new StringSelection(dirPath+"\\Images\\MarinaDelRey.jpg");
+		  
+		  // Copy to clipboard
+			 Toolkit.getDefaultToolkit().getSystemClipboard().setContents(sel,null);
+			 System.out.println("selection" +sel);
+			 
+			 driver.findElement(By.id("locImg")).click();
+			 
+			 Robot robot = new Robot();
+			 Thread.sleep(1000);
+			      
+			  // Press Enter
+			 robot.keyPress(KeyEvent.VK_ENTER);
+			 
+			// Release Enter
+			 robot.keyRelease(KeyEvent.VK_ENTER);
+			 
+			  // Press CTRL+V
+			 robot.keyPress(KeyEvent.VK_CONTROL);
+			 robot.keyPress(KeyEvent.VK_V);
+			 
+			// Release CTRL+V
+			 robot.keyRelease(KeyEvent.VK_CONTROL);
+			 robot.keyRelease(KeyEvent.VK_V);
+			 Thread.sleep(1000);
+			 robot.keyPress(KeyEvent.VK_ENTER);
+			 robot.keyRelease(KeyEvent.VK_ENTER);
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("latitude")));
 		driver.findElement(By.name("latitude")).sendKeys(data.get(1).get(1));
@@ -95,14 +154,42 @@ public class ApplauseTest2 {
 	
 	@Then("^user enters all other employee fields$")
 	public void user_enters_all_other_employee_fields(DataTable table) throws Throwable {
-		List<List<String>> data = table.raw();
+		
+String dirPath = System.getProperty("user.dir");
+		
+		// Specify the file location with extension
+		  StringSelection sel = new StringSelection(dirPath+"\\Images\\AamirKhan.png");
+		  
+		  // Copy to clipboard
+			 Toolkit.getDefaultToolkit().getSystemClipboard().setContents(sel,null);
+			 System.out.println("selection" +sel);
+			 
+			 driver.findElement(By.id("fileImg")).click();
+			 
+			 Robot robot = new Robot();
+			 Thread.sleep(1000);
+			      
+			  // Press Enter
+			 robot.keyPress(KeyEvent.VK_ENTER);
+			 
+			// Release Enter
+			 robot.keyRelease(KeyEvent.VK_ENTER);
+			 
+			  // Press CTRL+V
+			 robot.keyPress(KeyEvent.VK_CONTROL);
+			 robot.keyPress(KeyEvent.VK_V);
+			 
+			// Release CTRL+V
+			 robot.keyRelease(KeyEvent.VK_CONTROL);
+			 robot.keyRelease(KeyEvent.VK_V);
+			 Thread.sleep(1000);
+			 robot.keyPress(KeyEvent.VK_ENTER);
+			 robot.keyRelease(KeyEvent.VK_ENTER);
+			 List<List<String>> data = table.raw();
+			 WebDriverWait wait = new WebDriverWait(driver, 10);
+				wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("email")));
 		driver.findElement(By.name("email")).sendKeys(data.get(0).get(1));
 		driver.findElement(By.name("contact")).sendKeys(data.get(1).get(1));
-		driver.findElement(By.id("fileImg")).click();
-		Runtime.getRuntime().exec("Images/Aamir Khan.exe");
-		Thread.sleep(2000);
-		WebDriverWait wait = new WebDriverWait(driver, 10);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("dept")));
 		driver.findElement(By.name("dept")).sendKeys(data.get(2).get(1));
 		driver.findElement(By.name("empPref")).sendKeys(data.get(3).get(1));
 		driver.findElement(By.name("sdate")).sendKeys(data.get(4).get(1));

@@ -112,7 +112,7 @@ public class ApplauseTest1 {
 
 	@Given("^user selects the brand from the brand dropdown$")
 	public void user_selects_the_brand_from_the_brand_dropdown(DataTable table) throws Throwable {
-		Thread.sleep(2000);
+		Thread.sleep(4000);
 		List<List<String>> data = table.raw();
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(loadingImage));
