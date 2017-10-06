@@ -47,25 +47,7 @@ public class ApplauseTest2 {
 			 
 			 driver.findElement(By.id("fileLogo")).click();
 			 
-			 Robot robot = new Robot();
-			 Thread.sleep(1000);
-			      
-			  // Press Enter
-			 robot.keyPress(KeyEvent.VK_ENTER);
-			 
-			// Release Enter
-			 robot.keyRelease(KeyEvent.VK_ENTER);
-			 
-			  // Press CTRL+V
-			 robot.keyPress(KeyEvent.VK_CONTROL);
-			 robot.keyPress(KeyEvent.VK_V);
-			 
-			// Release CTRL+V
-			 robot.keyRelease(KeyEvent.VK_CONTROL);
-			 robot.keyRelease(KeyEvent.VK_V);
-			 Thread.sleep(1000);
-			 robot.keyPress(KeyEvent.VK_ENTER);
-			 robot.keyRelease(KeyEvent.VK_ENTER);
+			 FileUpload.uploadFile();
 			 
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("br")));
@@ -116,25 +98,7 @@ public class ApplauseTest2 {
 			 
 			 driver.findElement(By.id("locImg")).click();
 			 
-			 Robot robot = new Robot();
-			 Thread.sleep(1000);
-			      
-			  // Press Enter
-			 robot.keyPress(KeyEvent.VK_ENTER);
-			 
-			// Release Enter
-			 robot.keyRelease(KeyEvent.VK_ENTER);
-			 
-			  // Press CTRL+V
-			 robot.keyPress(KeyEvent.VK_CONTROL);
-			 robot.keyPress(KeyEvent.VK_V);
-			 
-			// Release CTRL+V
-			 robot.keyRelease(KeyEvent.VK_CONTROL);
-			 robot.keyRelease(KeyEvent.VK_V);
-			 Thread.sleep(1000);
-			 robot.keyPress(KeyEvent.VK_ENTER);
-			 robot.keyRelease(KeyEvent.VK_ENTER);
+			 FileUpload.uploadFile();
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("latitude")));
 		driver.findElement(By.name("latitude")).sendKeys(data.get(1).get(1));
@@ -166,25 +130,7 @@ String dirPath = System.getProperty("user.dir");
 			 
 			 driver.findElement(By.id("fileImg")).click();
 			 
-			 Robot robot = new Robot();
-			 Thread.sleep(1000);
-			      
-			  // Press Enter
-			 robot.keyPress(KeyEvent.VK_ENTER);
-			 
-			// Release Enter
-			 robot.keyRelease(KeyEvent.VK_ENTER);
-			 
-			  // Press CTRL+V
-			 robot.keyPress(KeyEvent.VK_CONTROL);
-			 robot.keyPress(KeyEvent.VK_V);
-			 
-			// Release CTRL+V
-			 robot.keyRelease(KeyEvent.VK_CONTROL);
-			 robot.keyRelease(KeyEvent.VK_V);
-			 Thread.sleep(1000);
-			 robot.keyPress(KeyEvent.VK_ENTER);
-			 robot.keyRelease(KeyEvent.VK_ENTER);
+			 FileUpload.uploadFile();
 			 List<List<String>> data = table.raw();
 			 WebDriverWait wait = new WebDriverWait(driver, 10);
 				wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("email")));

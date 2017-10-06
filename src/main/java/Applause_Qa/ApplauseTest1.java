@@ -74,6 +74,7 @@ public class ApplauseTest1 {
 	@Then("^click on the save button$")
 	public void click_on_the_save_button() throws Throwable {
 		driver.findElement(By.xpath("//*[contains(text(), 'Save')]")).click();
+		Thread.sleep(3000);
 
 	}
 

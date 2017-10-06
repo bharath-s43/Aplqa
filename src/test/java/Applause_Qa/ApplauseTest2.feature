@@ -1,6 +1,12 @@
 Feature: Testing by entering all the fields
 
-
+Scenario: Login via admin
+    Given go to applause portal
+    When user enters the email id and password
+      | Email Id | admin@meimodo.com |
+      | Password | password          |
+    Then clicks on login button
+    
   Scenario: Create customer by entering all the fields
     Given user clicks on the customer menu
     When user click on the Add new button
@@ -76,4 +82,11 @@ Feature: Testing by entering all the fields
       | Employee Id | AL1E1              |
       | Role        | Multi-Unit Manager |
     Then user enters all other employee fields
+    | Email Id | aamir_khan@gmail.com              |
+      | Phone Number       | 917895484574 |
+      | Department | Front Office              |
+      | Personalization Value     | Cricket, Travelling | 
+       | Start Date | 08/15/2010            |
     And click on the save button
+    
+    

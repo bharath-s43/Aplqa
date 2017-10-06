@@ -1,0 +1,334 @@
+-------------------------------------------------------------------------------
+Test set: Applause_Qa.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 52, Failures: 0, Errors: 16, Skipped: 27, Time elapsed: 34.235 sec <<< FAILURE!
+When user click on the Add new button(Scenario: Create customer with only mandatory fields)  Time elapsed: 0.003 sec  <<< ERROR!
+org.openqa.selenium.WebDriverException: unknown error: Element <a class="btn btn-default btn-list-view ng-scope" href="#/createCustomer" ng-if="userAccess.Customers.create">...</a> is not clickable at point (88, 184). Other element would receive the click: <div ng-hide="loaded" class="se-pre-con1">...</div>
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'DESKTOP-PD4GPRC', ip: '192.168.100.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\WINDOWS\TEMP\scoped_dir10044_1324}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=61.0.3163.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 919988a91770db67d6b4bdcb6629c20b
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:275)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
+	at Applause_Qa.ApplauseTest1.user_click_on_the_Add_new_button(ApplauseTest1.java:61)
+	at ?.When user click on the Add new button(src/test/java/Applause_Qa/ApplauseTest1.feature:12)
+
+Scenario: Create customer with only mandatory fields  Time elapsed: 0.004 sec  <<< ERROR!
+org.openqa.selenium.WebDriverException: unknown error: Element <a class="btn btn-default btn-list-view ng-scope" href="#/createCustomer" ng-if="userAccess.Customers.create">...</a> is not clickable at point (88, 184). Other element would receive the click: <div ng-hide="loaded" class="se-pre-con1">...</div>
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'DESKTOP-PD4GPRC', ip: '192.168.100.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\WINDOWS\TEMP\scoped_dir10044_1324}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=61.0.3163.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 919988a91770db67d6b4bdcb6629c20b
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:275)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
+	at Applause_Qa.ApplauseTest1.user_click_on_the_Add_new_button(ApplauseTest1.java:61)
+	at ?.When user click on the Add new button(src/test/java/Applause_Qa/ApplauseTest1.feature:12)
+
+Given user selects the customer from the customer dropdown(Scenario: Create brand with only mandatory fields)  Time elapsed: 0 sec  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: Cannot locate element with text: Hertz Corporation
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'DESKTOP-PD4GPRC', ip: '192.168.100.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:151)
+	at Applause_Qa.ApplauseTest1.user_selects_the_customer_from_the_customer_dropdown(ApplauseTest1.java:87)
+	at ?.Given user selects the customer from the customer dropdown(src/test/java/Applause_Qa/ApplauseTest1.feature:18)
+
+Scenario: Create brand with only mandatory fields  Time elapsed: 0 sec  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: Cannot locate element with text: Hertz Corporation
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'DESKTOP-PD4GPRC', ip: '192.168.100.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:151)
+	at Applause_Qa.ApplauseTest1.user_selects_the_customer_from_the_customer_dropdown(ApplauseTest1.java:87)
+	at ?.Given user selects the customer from the customer dropdown(src/test/java/Applause_Qa/ApplauseTest1.feature:18)
+
+Given user selects the brand from the brand dropdown(Scenario: Create location with only mandatory fields)  Time elapsed: 0 sec  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: Cannot locate element with text: Hertz
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'DESKTOP-PD4GPRC', ip: '192.168.100.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:151)
+	at Applause_Qa.ApplauseTest1.user_selects_the_brand_from_the_brand_dropdown(ApplauseTest1.java:121)
+	at ?.Given user selects the brand from the brand dropdown(src/test/java/Applause_Qa/ApplauseTest1.feature:28)
+
+Scenario: Create location with only mandatory fields  Time elapsed: 0 sec  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: Cannot locate element with text: Hertz
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'DESKTOP-PD4GPRC', ip: '192.168.100.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:151)
+	at Applause_Qa.ApplauseTest1.user_selects_the_brand_from_the_brand_dropdown(ApplauseTest1.java:121)
+	at ?.Given user selects the brand from the brand dropdown(src/test/java/Applause_Qa/ApplauseTest1.feature:28)
+
+Given user selects the location from the location dropdown(Scenario: Create employee with only mandatory fields)  Time elapsed: 0 sec  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: Cannot locate element with text: SFO airport
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'DESKTOP-PD4GPRC', ip: '192.168.100.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:151)
+	at Applause_Qa.ApplauseTest1.user_selects_the_location_from_the_location_dropdown(ApplauseTest1.java:152)
+	at ?.Given user selects the location from the location dropdown(src/test/java/Applause_Qa/ApplauseTest1.feature:39)
+
+Scenario: Create employee with only mandatory fields  Time elapsed: 0 sec  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: Cannot locate element with text: SFO airport
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'DESKTOP-PD4GPRC', ip: '192.168.100.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:151)
+	at Applause_Qa.ApplauseTest1.user_selects_the_location_from_the_location_dropdown(ApplauseTest1.java:152)
+	at ?.Given user selects the location from the location dropdown(src/test/java/Applause_Qa/ApplauseTest1.feature:39)
+
+Then clicks on Assign individual button(Scenario: Assign beacon to location)  Time elapsed: 0.004 sec  <<< ERROR!
+org.openqa.selenium.WebDriverException: unknown error: Element <a class="btn btn-default btn-list-view-small" ng-click="goToAssign()">...</a> is not clickable at point (491, 184). Other element would receive the click: <div ng-hide="loaded" class="se-pre-con1">...</div>
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'DESKTOP-PD4GPRC', ip: '192.168.100.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\WINDOWS\TEMP\scoped_dir10044_1324}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=61.0.3163.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 919988a91770db67d6b4bdcb6629c20b
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:275)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
+	at Applause_Qa.ApplauseTest1.clicks_on_Assign_individual_button(ApplauseTest1.java:186)
+	at ?.Then clicks on Assign individual button(src/test/java/Applause_Qa/ApplauseTest1.feature:55)
+
+Scenario: Assign beacon to location  Time elapsed: 0.005 sec  <<< ERROR!
+org.openqa.selenium.WebDriverException: unknown error: Element <a class="btn btn-default btn-list-view-small" ng-click="goToAssign()">...</a> is not clickable at point (491, 184). Other element would receive the click: <div ng-hide="loaded" class="se-pre-con1">...</div>
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'DESKTOP-PD4GPRC', ip: '192.168.100.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\WINDOWS\TEMP\scoped_dir10044_1324}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=61.0.3163.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 919988a91770db67d6b4bdcb6629c20b
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:275)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
+	at Applause_Qa.ApplauseTest1.clicks_on_Assign_individual_button(ApplauseTest1.java:186)
+	at ?.Then clicks on Assign individual button(src/test/java/Applause_Qa/ApplauseTest1.feature:55)
+
+Then selects the beacon id(Scenario: Pair beacon to an employee)  Time elapsed: 0.016 sec  <<< ERROR!
+org.openqa.selenium.WebDriverException: unknown error: Element <div class="ui-grid-selection-row-header-buttons ui-grid-icon-ok ng-scope" ng-class="{'ui-grid-all-selected': grid.selection.selectAll}" ng-click="headerButtonClick($event)" ng-if="grid.options.enableSelectAll"></div> is not clickable at point (35, 237). Other element would receive the click: <a href="" ng-click="" class="active" style="color:#333;">...</a>
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'DESKTOP-PD4GPRC', ip: '192.168.100.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\WINDOWS\TEMP\scoped_dir10044_1324}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=61.0.3163.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 919988a91770db67d6b4bdcb6629c20b
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:275)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
+	at Applause_Qa.ApplauseTest1.selects_the_beacon_id(ApplauseTest1.java:202)
+	at ?.Then selects the beacon id(src/test/java/Applause_Qa/ApplauseTest1.feature:62)
+
+Scenario: Pair beacon to an employee  Time elapsed: 0.016 sec  <<< ERROR!
+org.openqa.selenium.WebDriverException: unknown error: Element <div class="ui-grid-selection-row-header-buttons ui-grid-icon-ok ng-scope" ng-class="{'ui-grid-all-selected': grid.selection.selectAll}" ng-click="headerButtonClick($event)" ng-if="grid.options.enableSelectAll"></div> is not clickable at point (35, 237). Other element would receive the click: <a href="" ng-click="" class="active" style="color:#333;">...</a>
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'DESKTOP-PD4GPRC', ip: '192.168.100.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\WINDOWS\TEMP\scoped_dir10044_1324}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=61.0.3163.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 919988a91770db67d6b4bdcb6629c20b
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:275)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
+	at Applause_Qa.ApplauseTest1.selects_the_beacon_id(ApplauseTest1.java:202)
+	at ?.Then selects the beacon id(src/test/java/Applause_Qa/ApplauseTest1.feature:62)
+
+Then selects the beacon id(Scenario: Unpair beacon from an employee)  Time elapsed: 0 sec  <<< ERROR!
+org.openqa.selenium.WebDriverException: unknown error: Element <div class="ui-grid-selection-row-header-buttons ui-grid-icon-ok ng-scope" ng-class="{'ui-grid-all-selected': grid.selection.selectAll}" ng-click="headerButtonClick($event)" ng-if="grid.options.enableSelectAll"></div> is not clickable at point (35, 237). Other element would receive the click: <a href="" ng-click="" class="active" style="color:#333;">...</a>
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'DESKTOP-PD4GPRC', ip: '192.168.100.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\WINDOWS\TEMP\scoped_dir10044_1324}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=61.0.3163.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 919988a91770db67d6b4bdcb6629c20b
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:275)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
+	at Applause_Qa.ApplauseTest1.selects_the_beacon_id(ApplauseTest1.java:202)
+	at ?.Then selects the beacon id(src/test/java/Applause_Qa/ApplauseTest1.feature:71)
+
+Scenario: Unpair beacon from an employee  Time elapsed: 0 sec  <<< ERROR!
+org.openqa.selenium.WebDriverException: unknown error: Element <div class="ui-grid-selection-row-header-buttons ui-grid-icon-ok ng-scope" ng-class="{'ui-grid-all-selected': grid.selection.selectAll}" ng-click="headerButtonClick($event)" ng-if="grid.options.enableSelectAll"></div> is not clickable at point (35, 237). Other element would receive the click: <a href="" ng-click="" class="active" style="color:#333;">...</a>
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'DESKTOP-PD4GPRC', ip: '192.168.100.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\WINDOWS\TEMP\scoped_dir10044_1324}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=61.0.3163.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 919988a91770db67d6b4bdcb6629c20b
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:275)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
+	at Applause_Qa.ApplauseTest1.selects_the_beacon_id(ApplauseTest1.java:202)
+	at ?.Then selects the beacon id(src/test/java/Applause_Qa/ApplauseTest1.feature:71)
+
+Then selects the beacon id(Scenario: Unassign beacon from an employee)  Time elapsed: 0.016 sec  <<< ERROR!
+org.openqa.selenium.WebDriverException: unknown error: Element <div class="ui-grid-selection-row-header-buttons ui-grid-icon-ok ng-scope" ng-class="{'ui-grid-all-selected': grid.selection.selectAll}" ng-click="headerButtonClick($event)" ng-if="grid.options.enableSelectAll"></div> is not clickable at point (35, 237). Other element would receive the click: <a href="" ng-click="" class="active" style="color:#333;">...</a>
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'DESKTOP-PD4GPRC', ip: '192.168.100.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\WINDOWS\TEMP\scoped_dir10044_1324}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=61.0.3163.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 919988a91770db67d6b4bdcb6629c20b
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:275)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
+	at Applause_Qa.ApplauseTest1.selects_the_beacon_id(ApplauseTest1.java:202)
+	at ?.Then selects the beacon id(src/test/java/Applause_Qa/ApplauseTest1.feature:77)
+
+Scenario: Unassign beacon from an employee  Time elapsed: 0.016 sec  <<< ERROR!
+org.openqa.selenium.WebDriverException: unknown error: Element <div class="ui-grid-selection-row-header-buttons ui-grid-icon-ok ng-scope" ng-class="{'ui-grid-all-selected': grid.selection.selectAll}" ng-click="headerButtonClick($event)" ng-if="grid.options.enableSelectAll"></div> is not clickable at point (35, 237). Other element would receive the click: <a href="" ng-click="" class="active" style="color:#333;">...</a>
+  (Session info: chrome=61.0.3163.100)
+  (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'DESKTOP-PD4GPRC', ip: '192.168.100.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\WINDOWS\TEMP\scoped_dir10044_1324}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=61.0.3163.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 919988a91770db67d6b4bdcb6629c20b
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:275)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
+	at Applause_Qa.ApplauseTest1.selects_the_beacon_id(ApplauseTest1.java:202)
+	at ?.Then selects the beacon id(src/test/java/Applause_Qa/ApplauseTest1.feature:77)
+
