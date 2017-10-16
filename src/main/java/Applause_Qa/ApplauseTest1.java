@@ -71,10 +71,10 @@ public class ApplauseTest1 {
 			driver.findElement(By.name("cname")).sendKeys(data.get(0).get(1));
 	}
 
-	@Then("^click on the save button$")
+	@And("^click on the save button$")
 	public void click_on_the_save_button() throws Throwable {
 		driver.findElement(By.xpath("//*[contains(text(), 'Save')]")).click();
-		Thread.sleep(3000);
+		Thread.sleep(6000);
 
 	}
 

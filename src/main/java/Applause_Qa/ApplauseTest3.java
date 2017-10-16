@@ -94,6 +94,7 @@ String dirPath = System.getProperty("user.dir");
 			 driver.findElement(By.id("empImgBulk")).click();
 			 
 			 FileUpload.uploadFile();
+			 Thread.sleep(2000);
 			 
 				
 	}
