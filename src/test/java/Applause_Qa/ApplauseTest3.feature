@@ -1,7 +1,6 @@
 Feature: Bulk upload feature
 
 
-
 Scenario: Assign bulk 
   When user clicks on the beacon menu
   Then user clicks on the bulk action
@@ -17,27 +16,28 @@ Scenario: Assign bulk
   Then upload the zip file to images
    And click on the save button
    
-   Scenario: Pair bulk 
+ Scenario: Pair bulk 
   When user clicks on the beacon menu
   Then user clicks on the bulk action
   Then user clicks on the Pair link
   Then upload the csv file to Pair Beacons
    And click on the save button
    
-   Scenario: Unpair bulk 
+ Scenario: Unpair bulk 
   When user clicks on the beacon menu
   Then user clicks on the bulk action
   Then user clicks on the Unpair link
   Then upload the csv file to Unpair Beacons
    And click on the save button
    
-    Scenario: Unassign bulk 
+   Scenario: Unassign bulk 
   When user clicks on the beacon menu
   Then user clicks on the bulk action
   Then user clicks on the Unassign link
   Then upload the csv file to Unassign Beacons
    And click on the save button
-   
+  
+ 
    
    
    
