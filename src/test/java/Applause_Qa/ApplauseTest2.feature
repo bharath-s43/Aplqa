@@ -1,11 +1,12 @@
 Feature: Testing by entering all the fields
 
-Scenario: Login via admin
+ Scenario: Login via admin
     Given go to applause portal
     When user enters the email id and password
       | Email Id | admin@meimodo.com |
       | Password | password          |
     Then clicks on login button
+
     
   Scenario: Create customer by entering all the fields
     Given user clicks on the customer menu
@@ -15,7 +16,7 @@ Scenario: Login via admin
     Then user enters all other customer fields
       | Address                    | 10400 Fernwood Road, Bethesda, MD 20817 |
       | Primary Admin Name         | Rohit Khanna                            |
-      | Primary Admin Email        | rohit@gmail.com                         |
+      | Primary Admin Email        | bharathsb43@gmail.com                         |
       | Primary Admin Phone Number |                              7845481545 |
       | Admin Name                 | Arvind Singh                            |
       | Admin Email                | arvind@gmail.com                        |
@@ -29,6 +30,8 @@ Scenario: Login via admin
     When user click on the Add new button
     Then user enters the brand name
       | Brand | The Ritz Carlton |
+      Then user upload the brand image
+      |ImagePath | \\Images\\TheRitzCarlton.png |
     Then selects the rating image
     Then user enters all other brand fields
       | Primary Color Red          |                    196 |
@@ -57,6 +60,8 @@ Scenario: Login via admin
       | Location | Marina Del Rey |
     Then enters the address
       | Address | 4375 Admiralty Way, Marina del Rey, California 90292 United States |
+       Then user upload the location image
+       |ImagePath | \\Images\\MarinaDelRey.jpg |
     Then user enters all other location fields
       | Location Beacon            | 45655-54545       |
       | Latitude                   |           33.9803 |
@@ -78,6 +83,8 @@ Scenario: Login via admin
     Then user enters the employee first name and last name
       | First Name | Aamir |
       | Last Name  | Khan  |
+       Then user upload the employee image
+        |ImagePath | \\Images\\AamirKhan.png |
     Then user enters the employee id and role
       | Employee Id | AL1E1              |
       | Role        | Multi-Unit Manager |

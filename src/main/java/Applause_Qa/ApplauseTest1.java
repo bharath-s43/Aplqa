@@ -1,11 +1,14 @@
 package Applause_Qa;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -57,9 +60,8 @@ public class ApplauseTest1 {
 	public void user_click_on_the_Add_new_button() throws Throwable {
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(loadingImage));
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(text(),'Add New')]")));
-			driver.findElement(By.xpath("//*[contains(text(),'Add New')]")).click();
-		
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[contains(text(),'Add New')]")));
+		driver.findElement(By.xpath("//a[contains(text(),'Add New')]")).click();
 	}
 
 	@Then("^user enters the customer name$")
@@ -80,7 +82,6 @@ public class ApplauseTest1 {
 
 	@Given("^user selects the customer from the customer dropdown$")
 	public void user_selects_the_customer_from_the_customer_dropdown(DataTable table) throws Throwable {
-		Thread.sleep(2000);
 		List<List<String>> data = table.raw();
 		WebDriverWait wait = new WebDriverWait(driver, 20);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("custDropDown")));
@@ -91,6 +92,8 @@ public class ApplauseTest1 {
 
 	@When("^user clicks on the brand menu$")
 	public void user_clicks_on_the_brand_menu() throws Throwable {
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a [@ng-class='brandClass']")));
 		driver.findElement(By.xpath("//a [@ng-class='brandClass']")).click();
 	}
 
@@ -176,15 +179,17 @@ public class ApplauseTest1 {
 	
 	@When("^user clicks on the beacon menu$")
 	public void user_clicks_on_the_beacon_menu() throws Throwable {
-		Thread.sleep(1000);
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a [@ng-class='beaconClass']")));
 		driver.findElement(By.xpath("//a [@ng-class='beaconClass']")).click();
 	}
 	
 	@Then("^clicks on Assign individual button$")
 	public void clicks_on_Assign_individual_button() throws Throwable {
-		WebDriverWait wait = new WebDriverWait(driver, 10);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(text(), 'Assign Individual')]")));
-		driver.findElement(By.xpath("//*[contains(text(), 'Assign Individual')]")).click();
+			WebDriverWait wait = new WebDriverWait(driver, 10);
+			wait.until(ExpectedConditions.invisibilityOfElementLocated(loadingImage));
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[contains(text(),'Assign Individual')]")));
+			driver.findElement(By.xpath("//a[contains(text(),'Assign Individual')]")).click();
 	}
 
 	@Then("^enters the beacon id$")
@@ -205,6 +210,8 @@ public class ApplauseTest1 {
 
 	@Then("^clicks on Pair individual button$")
 	public void clicks_on_Pair_individual_button() throws Throwable {
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(text(), 'Pair Individual')]")));
 		driver.findElement(By.xpath("//*[contains(text(), 'Pair Individual')]")).click();
 	}
 
@@ -242,6 +249,7 @@ public class ApplauseTest1 {
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Yes')]")));
 		driver.findElement(By.xpath("//button[contains(text(),'Yes')]")).click();
+		Thread.sleep(2000);
 	}
 
 	@Then("^clicks the Unassign button$")

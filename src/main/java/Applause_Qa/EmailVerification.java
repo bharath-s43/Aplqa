@@ -15,17 +15,17 @@ public class EmailVerification {
 	
 	public static WebDriver driver = null;
 	
-	public static void mailVerify() throws Throwable {
+	public static void mailVerify(String Email, String Password) throws Throwable {
 	System.setProperty("webdriver.chrome.driver","Tools/chromedriver.exe");
 	driver = new ChromeDriver();
 	driver.get("https://www.google.com/gmail/");
 	driver.manage().window().maximize();
 	
-	driver.findElement(By.name("identifier")).sendKeys("bharathsb43@gmail.com");
+	driver.findElement(By.name("identifier")).sendKeys(Email);
 	driver.findElement(By.xpath("//span[contains(text(), 'Next')]")).click();
 	WebDriverWait wait = new WebDriverWait(driver, 20);
 	wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("password")));
-	driver.findElement(By.name("password")).sendKeys("#abcd123");
+	driver.findElement(By.name("password")).sendKeys(Password);
 	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(), 'Next')]")));
 	driver.findElement(By.xpath("//span[contains(text(), 'Next')]")).click();
 	String web = "//span[@class='bog']/b[contains(text(),'Applause Activation')]";

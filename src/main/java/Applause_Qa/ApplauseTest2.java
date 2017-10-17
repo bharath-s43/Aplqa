@@ -20,6 +20,7 @@ public class ApplauseTest2 {
 	WebDriver driver = ApplauseTest1.getdriver();
 	JavascriptExecutor jse = (JavascriptExecutor)driver;
 	
+
 	@Then("^user enters all other customer fields$")
 	public void user_enters_all_other_customer_fields(DataTable table) throws Throwable {
 		List<List<String>> data = table.raw();
@@ -31,24 +32,28 @@ public class ApplauseTest2 {
 		driver.findElement(By.name("caemail")).sendKeys(data.get(5).get(1));
 		driver.findElement(By.name("catel")).sendKeys(data.get(6).get(1));
 	}
-	@Then("^user enters all other brand fields$")
-	public void user_enters_all_other_brand_fields(DataTable table) throws Throwable {
+	
+	@Then("^user upload the brand image$")
+	public void user_upload_the_brand_image(DataTable table) throws Throwable {
 		List<List<String>> data = table.raw();
 		jse.executeScript("scroll(0, -450);");
 		
 		String dirPath = System.getProperty("user.dir");
-		
+		  System.out.println(data.get(0).get(1));
 		// Specify the file location with extension
-		  StringSelection sel = new StringSelection(dirPath+"\\Images\\TheRitzCarlton.png");
-		  
+		  StringSelection sel = new StringSelection(dirPath+data.get(0).get(1));
+		
 		  // Copy to clipboard
 			 Toolkit.getDefaultToolkit().getSystemClipboard().setContents(sel,null);
 			 System.out.println("selection" +sel);
 			 
 			 driver.findElement(By.id("fileLogo")).click();
-			 
 			 FileUpload.uploadFile();
-			 
+	}
+	
+	@Then("^user enters all other brand fields$")
+	public void user_enters_all_other_brand_fields(DataTable table) throws Throwable {
+		List<List<String>> data = table.raw();
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("br")));
 		driver.findElement(By.id("br")).clear();
@@ -82,23 +87,31 @@ public class ApplauseTest2 {
 		
 	}
 	
+	@Then("^user upload the location image$")
+	public void user_upload_the_location_image(DataTable table) throws Throwable {
+		List<List<String>> data = table.raw();
+		
+		
+		String dirPath = System.getProperty("user.dir");
+			
+			// Specify the file location with extension
+			  StringSelection sel = new StringSelection(dirPath+data.get(0).get(1));
+			  
+			  // Copy to clipboard
+				 Toolkit.getDefaultToolkit().getSystemClipboard().setContents(sel,null);
+				 System.out.println("selection" +sel);
+				 
+				 driver.findElement(By.id("locImg")).click();
+				 
+				 FileUpload.uploadFile();
+	}
+	
 	@Then("^user enters all other location fields$")
 	public void user_enters_all_other_location_fields(DataTable table) throws Throwable {
 		List<List<String>> data = table.raw();
 		driver.findElement(By.name("majorMinor")).sendKeys(data.get(0).get(1));
 		
-	String dirPath = System.getProperty("user.dir");
-		
-		// Specify the file location with extension
-		  StringSelection sel = new StringSelection(dirPath+"\\Images\\MarinaDelRey.jpg");
-		  
-		  // Copy to clipboard
-			 Toolkit.getDefaultToolkit().getSystemClipboard().setContents(sel,null);
-			 System.out.println("selection" +sel);
-			 
-			 driver.findElement(By.id("locImg")).click();
-			 
-			 FileUpload.uploadFile();
+	
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("latitude")));
 		driver.findElement(By.name("latitude")).sendKeys(data.get(1).get(1));
@@ -116,13 +129,14 @@ public class ApplauseTest2 {
 		driver.findElement(By.name("asmsf")).click();
 		}
 	
-	@Then("^user enters all other employee fields$")
-	public void user_enters_all_other_employee_fields(DataTable table) throws Throwable {
+	@Then("^user upload the employee image$")
+	public void user_upload_the_employee_image(DataTable table) throws Throwable {
 		
+		 List<List<String>> data = table.raw();
 String dirPath = System.getProperty("user.dir");
 		
 		// Specify the file location with extension
-		  StringSelection sel = new StringSelection(dirPath+"\\Images\\AamirKhan.png");
+		  StringSelection sel = new StringSelection(dirPath+data.get(0).get(1));
 		  
 		  // Copy to clipboard
 			 Toolkit.getDefaultToolkit().getSystemClipboard().setContents(sel,null);
@@ -131,6 +145,11 @@ String dirPath = System.getProperty("user.dir");
 			 driver.findElement(By.id("fileImg")).click();
 			 
 			 FileUpload.uploadFile();
+	}
+	@Then("^user enters all other employee fields$")
+	public void user_enters_all_other_employee_fields(DataTable table) throws Throwable {
+		
+
 			 List<List<String>> data = table.raw();
 			 WebDriverWait wait = new WebDriverWait(driver, 10);
 				wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("email")));

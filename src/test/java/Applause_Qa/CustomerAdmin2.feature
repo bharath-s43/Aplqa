@@ -1,4 +1,4 @@
- Feature: Customer Admin 2 Flow
+  Feature: Customer Admin 2 Flow
  
  
  Scenario: Create brand by entering all the fields
@@ -6,6 +6,8 @@
     When user click on the Add new button
     Then user enters the brand name
       | Brand | Westin |
+       Then user upload the brand image
+      |ImagePath | \\Images\\Westin.png |
     Then selects the rating image
     Then user enters all other brand fields
       | Primary Color Red          |                    178 |
@@ -34,34 +36,38 @@
       | Location | Kierland Villas Scott |
     Then enters the address
       | Address | 15620 N Clubgate Dr, Scottsdale, AZ 85254 |
+       Then user upload the location image
+       |ImagePath | \\Images\\KierlandVillasScott.jpg |
     Then user enters all other location fields
       | Location Beacon            | 65544-32377       |
-      | Latitude                   |           33.9803 |
-      | Longitude                  |          118.4517 |
+      | Latitude                   |           33.629356 |
+      | Longitude                  |         -111.938205 |
       | Interaction Radius         |                20 |
-      | Primary Admin Name         | Razia Sultana     |
-      | Primary Admin Email        | razia@gmail.com   |
-      | Primary Admin Phone Number | 458-454-4544      |
-      | Admin Name                 | Rahul Sharma      |
-      | Admin Email                | rahul@hotmail.com |
-      | Admin Phone Number         | (343)343-9874     |
+      | Primary Admin Name         | Rakesh Sharma     |
+      | Primary Admin Email        | rakesh@gmail.com   |
+      | Primary Admin Phone Number | 543-354-3454     |
+      | Admin Name                 | Arun Jat      |
+      | Admin Email                | arun@hotmail.com |
+      | Admin Phone Number         | (354)345-3453    |
     And click on the save button
 
   Scenario: Create employee by entering all the fields
     Given user selects the location from the location dropdown
-      | Location | Marina Del Rey |
+      | Location | Kierland Villas Scott |
     When user clicks on the employee menu
     When user click on the Add new button
     Then user enters the employee first name and last name
-      | First Name | Aamir |
-      | Last Name  | Khan  |
+      | First Name | Jonathan |
+      | Last Name  | Mac  |
+        Then user upload the employee image
+        |ImagePath | \\Images\\JonathanMac.jpg |
     Then user enters the employee id and role
-      | Employee Id | AL1E1              |
+      | Employee Id | GR4343             |
       | Role        | Multi-Unit Manager |
     Then user enters all other employee fields
-    | Email Id | aamir_khan@gmail.com              |
-      | Phone Number       | 917895484574 |
+    | Email Id | jon_mac@gmail.com              |
+      | Phone Number       | 918485245454 |
       | Department | Front Office              |
-      | Personalization Value     | Cricket, Travelling | 
-       | Start Date | 08/15/2010            |
+      | Personalization Value     | Music, Travelling | 
+       | Start Date | 12/25/2012            |
     And click on the save button
