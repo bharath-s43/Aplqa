@@ -3,7 +3,7 @@ package Applause_Qa;
 
 import java.awt.Toolkit;
 import java.awt.datatransfer.StringSelection;
-
+import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -11,6 +11,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import cucumber.api.DataTable;
 import cucumber.api.java.en.Then;
 
 
@@ -173,5 +174,24 @@ String dirPath = System.getProperty("user.dir");
 		
 				wait.until(ExpectedConditions.invisibilityOfElementLocated(loadingImage));
 	}
+	@Then("^select the customer$")
+	public void select_the_customer() throws Throwable {
+		Thread.sleep(2000);
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='ui-grid-cell-contents']/div")));
+		driver.findElement(By.xpath("//div[@class='ui-grid-cell-contents']/div")).click();
+	}
 
+	@Then("^click on send invite$")
+	public void click_on_send_invite() throws Throwable {
+		driver.findElement(By.xpath("//*[contains(text(), 'Send Invite')]")).click();
+	}
+
+	@Then("^verify the email and set password$")
+	public void verify_the_email_and_set_password(DataTable table) throws Throwable {
+		List<List<String>> data = table.raw();
+		String Email = data.get(0).get(1);
+		String Password = data.get(1).get(1);
+		EmailVerification.mailVerify(Email, Password,driver);
+	}
 }

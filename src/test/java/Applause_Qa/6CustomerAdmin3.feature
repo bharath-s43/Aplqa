@@ -36,13 +36,3 @@ Scenario: Assign bulk
   Then user clicks on the Unassign link
   Then upload the csv file to Unassign Beacons
    And click on the save button
-  
- 
-   
-   
-   
-   
-   
-   
-   
-   

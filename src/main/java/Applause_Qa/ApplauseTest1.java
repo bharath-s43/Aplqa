@@ -58,7 +58,7 @@ public class ApplauseTest1 {
 
 	@When("^user click on the Add new button$")
 	public void user_click_on_the_Add_new_button() throws Throwable {
-		WebDriverWait wait = new WebDriverWait(driver, 10);
+		WebDriverWait wait = new WebDriverWait(driver, 60);
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(loadingImage));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[contains(text(),'Add New')]")));
 		driver.findElement(By.xpath("//a[contains(text(),'Add New')]")).click();
@@ -179,6 +179,7 @@ public class ApplauseTest1 {
 	
 	@When("^user clicks on the beacon menu$")
 	public void user_clicks_on_the_beacon_menu() throws Throwable {
+		System.out.println("am insideuser clicks on the beacon menu");
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a [@ng-class='beaconClass']")));
 		driver.findElement(By.xpath("//a [@ng-class='beaconClass']")).click();
@@ -186,14 +187,15 @@ public class ApplauseTest1 {
 	
 	@Then("^clicks on Assign individual button$")
 	public void clicks_on_Assign_individual_button() throws Throwable {
-			WebDriverWait wait = new WebDriverWait(driver, 10);
-			wait.until(ExpectedConditions.invisibilityOfElementLocated(loadingImage));
+			WebDriverWait wait = new WebDriverWait(driver, 60);
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[contains(text(),'Assign Individual')]")));
-			driver.findElement(By.xpath("//a[contains(text(),'Assign Individual')]")).click();
+			wait.until(ExpectedConditions.invisibilityOfElementLocated(loadingImage));
+			driver.findElement(By.xpath("//a[text()='Assign Individual']")).click();
 	}
 
 	@Then("^enters the beacon id$")
 	public void enters_the_beacon_id(DataTable table) throws Throwable {
+		System.out.println("am inside enters the beacon");
 		List<List<String>> data = table.raw();
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("beaconId")));
