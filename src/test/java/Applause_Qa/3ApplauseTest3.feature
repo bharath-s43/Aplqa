@@ -39,7 +39,7 @@ Scenario: Assign bulk
    
   Scenario: Send the customer admin invitation mail
   When user clicks on the customer menu
-  Then select the customer 
+ Then select the customer/brand/location 
   Then click on send invite
   Then verify the email and set password
   | Email Id | bharathsb43@gmail.com |

@@ -174,8 +174,8 @@ String dirPath = System.getProperty("user.dir");
 		
 				wait.until(ExpectedConditions.invisibilityOfElementLocated(loadingImage));
 	}
-	@Then("^select the customer$")
-	public void select_the_customer() throws Throwable {
+	@Then("^select the customer/brand/location$")
+	public void select_the_customer_brand_location() throws Throwable {
 		Thread.sleep(2000);
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='ui-grid-cell-contents']/div")));
@@ -192,6 +192,6 @@ String dirPath = System.getProperty("user.dir");
 		List<List<String>> data = table.raw();
 		String Email = data.get(0).get(1);
 		String Password = data.get(1).get(1);
-		EmailVerification.mailVerify(Email, Password,driver);
+		EmailVerification.mailVerify(Email, Password);
 	}
 }

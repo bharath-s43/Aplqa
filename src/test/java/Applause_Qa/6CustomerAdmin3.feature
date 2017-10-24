@@ -36,3 +36,12 @@ Scenario: Assign bulk
   Then user clicks on the Unassign link
   Then upload the csv file to Unassign Beacons
    And click on the save button
+   
+   Scenario: Send the brand admin invitation mail
+  When user clicks on the brand menu
+  Then select the customer/brand/location 
+  Then click on Admin switch
+  Then click on send invite
+  Then verify the email and set password
+   | Email Id | bharathmails01@gmail.com |
+  | Password| #abcd123 |

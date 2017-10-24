@@ -1,8 +1,8 @@
 Feature: Customer Admin Flow
 
 
-  Scenario: Login via customer admin
-    Given go to applause portal
+  Scenario: Logout of super admin and login with customer admin
+      When user logout of the portal
     When user enters the email id and password
       | Email Id | bharathsb43@gmail.com |
       | Password | abcd123          |
@@ -10,17 +10,17 @@ Feature: Customer Admin Flow
     
     Scenario: Create brand with only mandatory fields using customer admin
     When user clicks on the brand menu
-    When user click on the Add new button1
+    When user click on the Add new button
     Then user enters the brand name
       | Brand | St. Regis |
-    Then selects the rating image1
+    Then selects the rating image
     And click on the save button
     
     Scenario: Create location with only mandatory fields
     Given user selects the brand from the brand dropdown
       | Brand | St. Regis |
     When user clicks on the location menu	
-    When user click on the Add new button1
+    When user click on the Add new button
     Then user enters the location name
       | Location | Punta Mita |
     Then enters the address
@@ -31,7 +31,7 @@ Feature: Customer Admin Flow
     Given user selects the location from the location dropdown
       | Location | Punta Mita |
     When user clicks on the employee menu
-    When user click on the Add new button1
+    When user click on the Add new button
     Then user enters the employee first name and last name
       | First Name | Bravo |
       | Last Name  | Lee |
@@ -42,7 +42,7 @@ Feature: Customer Admin Flow
 
   Scenario: Assign beacon to location
     When user clicks on the beacon menu
-    Then clicks on Assign individual button1
+    Then clicks on Assign individual button
     Then enters the beacon id
       | Beacon Id | 90f8sdfs9fd0sdfd |
     And click on the save button
