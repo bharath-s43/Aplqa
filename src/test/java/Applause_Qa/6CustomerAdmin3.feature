@@ -9,21 +9,21 @@ Scenario: Assign bulk
    And click on the save button
    
    
-   Scenario: Employee bulk 
+  Scenario: Employee bulk 
   When user clicks on the employee menu
   Then click on the Add in bulk button
   Then upload the csv file to Employee details
   Then upload the zip file to images
    And click on the save button
    
- Scenario: Pair bulk 
+  Scenario: Pair bulk 
   When user clicks on the beacon menu
   Then user clicks on the bulk action
   Then user clicks on the Pair link
   Then upload the csv file to Pair Beacons
    And click on the save button
    
- Scenario: Unpair bulk 
+  Scenario: Unpair bulk 
   When user clicks on the beacon menu
   Then user clicks on the bulk action
   Then user clicks on the Unpair link
@@ -36,6 +36,12 @@ Scenario: Assign bulk
   Then user clicks on the Unassign link
   Then upload the csv file to Unassign Beacons
    And click on the save button
+
+  Scenario: Delete all the employees
+    When user clicks on the employee menu
+    Then select the header checkbox
+    Then click on delete
+    Then clicks the Yes button
    
    Scenario: Send the brand admin invitation mail
   When user clicks on the brand menu

@@ -59,6 +59,7 @@ public class ApplauseTest1 {
 	@When("^user click on the Add new button$")
 	public void user_click_on_the_Add_new_button() throws Throwable {
 		WebDriverWait wait = new WebDriverWait(driver, 60);
+		Thread.sleep(3000);
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(loadingImage));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[contains(text(),'Add New')]")));
 		driver.findElement(By.xpath("//a[contains(text(),'Add New')]")).click();
@@ -75,7 +76,7 @@ public class ApplauseTest1 {
 
 	@And("^click on the save button$")
 	public void click_on_the_save_button() throws Throwable {
-		driver.findElement(By.xpath("//*[contains(text(), 'Save')]")).click();
+		driver.findElement(By.xpath("//button[contains(text(), 'Save')]")).click();
 		Thread.sleep(6000);
 
 	}

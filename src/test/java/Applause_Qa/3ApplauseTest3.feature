@@ -37,6 +37,13 @@ Scenario: Assign bulk
   Then upload the csv file to Unassign Beacons
    And click on the save button
    
+   Scenario: Delete all the employees
+    When user clicks on the employee menu
+    Then select the header checkbox
+    Then click on delete
+    Then clicks the Yes button
+    
+   
   Scenario: Send the customer admin invitation mail
   When user clicks on the customer menu
  Then select the customer/brand/location 

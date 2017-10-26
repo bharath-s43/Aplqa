@@ -194,4 +194,12 @@ String dirPath = System.getProperty("user.dir");
 		String Password = data.get(1).get(1);
 		EmailVerification.mailVerify(Email, Password);
 	}
+	
+	@Then("^select the header checkbox$")
+	public void select_the_header_checkbox() throws Throwable {
+		Thread.sleep(2000);
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='ui-grid-cell-contents']/div")));
+		driver.findElement(By.xpath("//div[@class='ui-grid-cell-contents']/div")).click();
+	}
 }
