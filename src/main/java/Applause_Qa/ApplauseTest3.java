@@ -51,8 +51,7 @@ public class ApplauseTest3 {
 		System.out.println("selection" +sel);
 		driver.findElement(By.id("beaconCSV")).click();
 		FileUpload.uploadFile();
-		WebDriverWait wait = new WebDriverWait(driver, 10);
-		wait.until(ExpectedConditions.invisibilityOfElementLocated(loadingImage));
+		Thread.sleep(2000);
 	}
 	
 	@Then("^click on the Add in bulk button$")
@@ -79,6 +78,7 @@ String dirPath = System.getProperty("user.dir");
 			 
 			FileUpload.uploadFile();
 			wait.until(ExpectedConditions.invisibilityOfElementLocated(loadingImage));
+			
 	}
 
 	@Then("^upload the zip file to images$")
@@ -123,6 +123,7 @@ String dirPath = System.getProperty("user.dir");
 			 FileUpload.uploadFile();
 		
 				wait.until(ExpectedConditions.invisibilityOfElementLocated(loadingImage));
+				Thread.sleep(2000);
 	}
 	
 	@Then("^user clicks on the Unpair link$")
@@ -148,6 +149,7 @@ String dirPath = System.getProperty("user.dir");
 			 FileUpload.uploadFile();
 		
 				wait.until(ExpectedConditions.invisibilityOfElementLocated(loadingImage));
+				Thread.sleep(2000);
 	}
 	
 	@Then("^user clicks on the Unassign link$")
@@ -173,6 +175,7 @@ String dirPath = System.getProperty("user.dir");
 			 FileUpload.uploadFile();
 		
 				wait.until(ExpectedConditions.invisibilityOfElementLocated(loadingImage));
+				Thread.sleep(2000);
 	}
 	@Then("^select the customer/brand/location$")
 	public void select_the_customer_brand_location() throws Throwable {

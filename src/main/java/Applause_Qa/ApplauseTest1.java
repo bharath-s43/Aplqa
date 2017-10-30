@@ -76,8 +76,10 @@ public class ApplauseTest1 {
 
 	@And("^click on the save button$")
 	public void click_on_the_save_button() throws Throwable {
+		WebDriverWait wait = new WebDriverWait(driver, 20);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(), 'Save')]")));
 		driver.findElement(By.xpath("//button[contains(text(), 'Save')]")).click();
-		Thread.sleep(6000);
+		Thread.sleep(5000);
 
 	}
 
@@ -129,6 +131,8 @@ public class ApplauseTest1 {
 
 	@When("^user clicks on the location menu$")
 	public void user_clicks_on_the_location_menu() throws Throwable {
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a [@ng-class='locClass']")));
 		driver.findElement(By.xpath("//a [@ng-class='locClass']")).click();
 	}
 

@@ -1,6 +1,6 @@
 Feature: Brand Admin Flow
 
-Scenario: Logout of super admin and login with customer admin
+Scenario: Logout of customer admin and login with brand admin
       When user logout of the portal
     When user enters the email id and password
       | Email Id | bharathmails01@gmail.com |

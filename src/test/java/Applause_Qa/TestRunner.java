@@ -8,7 +8,7 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		format = {"pretty"},
-		features = {"src/test/java/Applause_Qa/2ApplauseTest2.feature","src/test/java/Applause_Qa/3ApplauseTest3.feature","src/test/java/Applause_Qa/4CustomerAdmin1.feature","src/test/java/Applause_Qa/5CustomerAdmin2.feature","src/test/java/Applause_Qa/6CustomerAdmin3.feature","src/test/java/Applause_Qa/7BrandAdmin1.feature","src/test/java/Applause_Qa/8BrandAdmin2.feature","src/test/java/Applause_Qa/9BrandAdmin3.feature"}
+		features = {"src/test/java/Applause_Qa/1bApplauseTest.feature","src/test/java/Applause_Qa/1cApplauseTest.feature","src/test/java/Applause_Qa/2aCustomerAdmin.feature","src/test/java/Applause_Qa/2bCustomerAdmin.feature","src/test/java/Applause_Qa/2cCustomerAdmin.feature","src/test/java/Applause_Qa/3aBrandAdmin.feature","src/test/java/Applause_Qa/3bBrandAdmin.feature","src/test/java/Applause_Qa/3cBrandAdmin.feature","src/test/java/Applause_Qa/4aLocationAdmin.feature","src/test/java/Applause_Qa/4bLocationAdmin.feature","src/test/java/Applause_Qa/4cLocationAdmin.feature"}
 		)
 
 public class TestRunner {
